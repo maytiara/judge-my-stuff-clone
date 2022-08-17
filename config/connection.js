@@ -1,6 +1,7 @@
 const Sequelize = require('sequelize'); // npm
 require('dotenv').config(); // npm 
 
+// Use this simple formula instead using if, else statement
 const sequelize = new Sequelize(
   process.env.DB_NAME,
   process.env.DB_USER,
@@ -13,3 +14,4 @@ const sequelize = new Sequelize(
 );
 
 module.exports = sequelize;
+
