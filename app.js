@@ -27,7 +27,7 @@ const sess = {
 
 const app = express(); //
 app.use(session(sess)); // to initiate the const sess
-const PORT = process.env.PORT || 3001; //localhost port
+const PORT = process.env.PORT || 8080; //localhost port
 
 // Express middleware
 // Static files: required for express -> to call the files inside the public folder
