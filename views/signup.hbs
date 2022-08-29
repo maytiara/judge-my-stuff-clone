@@ -1,0 +1,32 @@
+<main class="form-signin w-100 m-auto">
+  <!--Added value: where you want this route wanted to go || http method: POST-->
+  <form class="signup-form" action="/judgemystuff/signup" method="POST">
+
+    <h3 class="mt-4" style="font-weight: 600;">Create your new account</h3>
+    <p class="spacehelper"></p>
+    
+    <!--Buttons-->
+    <section class="form-floating">
+      <input type="text" class="mt-2 mb-2 w-100 btn btn-lg border   border-secondary rounded-pill border border-3 border-opacity-25"  id="si-username-li" name="username" placeholder="Username" value="username"> <!--Need to specify the name type as this will the value in database-->
+    </section>
+    <section class="form-floating">
+      <input type="email" class="mt-2 mb-2 w-100 btn btn-lg border   border-secondary rounded-pill border border-3 border-opacity-25"  id="si-email-li" name="email" placeholder="email@example.com" value="email"> <!--Need to specify the name type as this will the value in database-->
+    </section>
+    <section class="form-floating">
+      <input type="text" class="mt-2 mb-2 w-100 btn btn-lg border   border-secondary rounded-pill border border-3 border-opacity-25"  id="si-city-li" name="city" placeholder="City/Suburb" value="city"> <!--Need to specify the name type as this will the value in database-->
+    </section>
+    <section class="form-floating">
+      <input type="password" class="mt-2 mb-4 w-100 btn btn-lg border  border-secondary rounded-pill border border-3 border-opacity-25"   id="si-password-li" name="password" placeholder="Password" value="password"> <!--Need to specify the name type as this will the value in database-->
+    </section>
+    <!--If User not found on the database
+    <p class="text-danger" id="not-user"></p>--> 
+
+    <img class="mt-4" src="/images/logo-j-black.png" alt="logo" id="logoBottom">
+    <!--Login Button || for future reference put the routes inside <a href> html tag-->
+    <button class="mt-4 w-100 btn btn-lg rounded-pill" type="submit" id="create-btn"><a href="/judgemystuff/login" style="text-decoration: none; color:white;">Create</a></button>
+    
+    </section>
+    
+  </form>
+</main>
+<!--<script src="/js/signup.js"></script>-->

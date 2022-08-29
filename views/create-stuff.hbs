@@ -1,0 +1,42 @@
+
+<form action="/judgemystuff/create-stuff" method="POST" enctype="multipart/form-data">
+  <p>{{photo_url}}</p>
+  <h4 class="mt-4" style="font-weight: 600;">Hello there,{{username}} Karen</h4>
+  
+  <section class="d-inline-flex align-self-center p-1">
+    <ul>
+      <span class="fa fa-star checked"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>
+        <span class="fa fa-star"></span>  
+    </ul>
+  </section>
+
+
+{{!-- title --}}
+  <section class="form-floating">
+  <input class="mt-4 mb-2 w-30 btn btn-lg border border-secondary rounded-pill border border-3 border-opacity-25" placeholder="enter your title here" type="text" name="title">
+  </section>
+{{!-- description --}}
+  <section class="form-floating">
+  <textarea class="mt-4 mb-2 w-30 btn btn-lg border border-secondary border border-3 border-opacity-25" placeholder="describe your post" name="description" cols="25" rows="10">{{description}}</textarea>
+  </section>
+
+  <section class="form-floating" id="uploadHere">
+    <input class="mt-4 btn rounded-pill" id="upload-button" type="file" name="image" accept="image/*"/> 
+  </section>
+
+  <p class="headlineBottom">You can share your DIY projects or anything and receive honest reviews</p>
+  
+  <button class="mt-4 mb-4 btn btn-lg rounded-pill" id="upload-submit-button" type="submit">Post</button>
+
+  <div class="container d-flex justify-content-center">
+    <p><strong>Earn ratings by</strong></p>
+    <a href="/judgemystuff/review-page" id="writeReview">&nbsp;Writing a review</a>
+  </div>
+  
+</form>
+
+{{!-- input field   --}}
+

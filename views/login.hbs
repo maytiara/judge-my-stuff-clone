@@ -1,0 +1,44 @@
+<!--Hero, this can remove after (optional)-->
+<section class="hero">
+  <!--background image (optional)-->
+  <img class="mt-4" src="/images/logo-j-black.png" alt="logo" id="logo">
+  <main class="form-signin w-100 m-auto">
+
+    <!--Added value: where you want this route wanted to go || http method: POST-->
+    <form class="login-form" action="/judgemystuff/login" method="POST">
+      <!--Logo section-->
+     
+      <p class="mt-2 mb-3" id="tagline">Get real reviews from the real world</p>
+      <p class="spacehelper"></p>
+
+      <h1 class="mt-1 mb-3" id="hello">Hello there,</h1>
+      
+      <!--Buttons-->
+      <section class="form-floating">
+
+
+        <input type="email" class="mt-1 mb-1 w-100 btn btn-lg border   border-secondary rounded-pill border border-3 border-opacity-25"  id="email-li" name="email" placeholder="email@example.com" value="email"> <!--Need to specify the id & name type as this will the value in database-->
+        <p>{{email}}</p>
+
+
+      </section>
+      <section class="form-floating">
+        <input type="password" class="mt-2 mb-2 w-100 btn btn-lg border  border-secondary rounded-pill border border-3 border-opacity-25"   id="password-li" name="password" placeholder="Password" value="password"> <!--Need to specify the id & name type as this will the value in database-->
+      </section>
+      <p>{{password}}</p>
+
+      <!--If User not found on the database-->
+      <p class="text-danger" id="not-user"></p> 
+
+      <!--Login Button-->
+
+      <button class="w-50 btn btn-lg rounded-pill" type="submit" id="loginBtn" href="/profile-page">Log in</button>
+     
+    </form>
+    <p class="mt-4">Don't have an account? <a href="/judgemystuff/signup">signup</a></p>
+  </main>
+</section>
+
+<script  src="/js/login.js"></script>
+
+
