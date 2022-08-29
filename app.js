@@ -27,7 +27,7 @@ const sess = {
 
 const app = express(); //
 app.use(session(sess)); // to initiate the const sess
-const PORT = process.env.PORT || 3001; //localhost port
+const PORT = process.env.PORT || 5000; //localhost port
 
 
 
@@ -36,6 +36,9 @@ const PORT = process.env.PORT || 3001; //localhost port
 app.use(express.json());
 app.use(express.urlencoded({ extended:true })); // to Parse URL data from any form
 app.use(express.static(path.join(__dirname,'public')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public'))});
 
 // this connects to the ./routes folder --to route the request
 // Need to define the routes
@@ -52,6 +55,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.engine('hbs', exhbs.engine({ extname: '.hbs'})); // inside the { config }
 app.set('view engine', 'hbs');
 app.use(express.static('./public/images'));
+
 
 // turn on connection server
 sequelize.sync({ force: false }).then 

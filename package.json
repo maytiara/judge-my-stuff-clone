@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "project 2 starter code and test",
   "main": "app.js",
-  "engine": {
+  "engines": {
     "node":"16.17.0"
   },
   "scripts": {
