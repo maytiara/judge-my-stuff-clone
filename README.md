@@ -16,8 +16,9 @@
 ---------------------
 1. [Usage](#usage)
 2. [Demo](#demo)
-3. [Contributors](#contributors)
-4. [Credits](#credits)
+3. [Deployment](#deployment)
+4. [Contributors](#contributors)
+5. [Credits](#credits)
 
 
 ### Usage
@@ -53,6 +54,10 @@
 ### Demo
 ---------------------
 ![Walkthrough](/public/images/judge-mystuff-walkthrough.gif)
+
+### Deployment
+---------------------
+[www.judgemystuff.app](https://judgemystuff.herokuapp.com/judgemystuff/login)
 
 ### Contributors
 ---------------------
