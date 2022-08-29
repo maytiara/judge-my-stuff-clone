@@ -1,7 +1,14 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: cadetblue;
+  padding: 0;
+}
+
+html, body, main {
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
 }
 
 .wrapper {
@@ -17,6 +24,28 @@ body {
   margin-top: 100px;
 }
 
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+
 .card_image {
   display: block;
   margin: 0 auto;
@@ -25,4 +54,186 @@ body {
   border-radius: 50%;
   overflow: hidden;
   object-fit: cover;
+}
+
+/*Logo*/
+#logo {
+  height: 11rem;
+}
+
+/*Bottom Logo*/
+#logoBottom {
+  height: 8rem;
+  align-items: center;
+}
+
+.checked {
+  color: orange;
+}
+
+/*Below the logo*/
+#tagline {
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/*Don't have an account ? Signup*/
+.signUp {
+  margin: 0;
+}
+
+/*ratings in reviews*/
+.star {
+  font-size: 1rem;
+  background-color: unset;
+  border: none;
+}
+
+.star:hover {
+  color: orange;
+  cursor: pointer;
+}
+
+.star-rating {
+  user-select: none;
+}
+
+/*Login button*/
+#loginBtn {
+  background-color: rgb(218, 117, 2);
+  color: white;
+}
+
+#create-btn {
+  background-color: rgb(218, 117, 2);
+  color: white;
+}
+
+#next-button {
+  background-color: rgb(218, 117, 2);
+  color: white;
+}
+
+/*Upload button*/
+#upload-button {
+  background-color: rgb(255, 255, 255);
+  outline:none;
+}
+
+::-webkit-file-upload-button {
+  border-radius: 50px;
+  border-style: none;
+  height: 2rem;
+}
+
+#uploadHere {
+  display:block;
+  margin: auto;
+}
+
+#upload-submit-button {
+  background-color: rgb(218, 117, 2);
+  color: white;
+  width: 25vh;
+}
+
+/*review-page headline bottom*/
+.headlineBottom {
+  color: rgb(114, 114, 114);
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 1rem 1rem 0 1rem;
+}
+
+/*Headline at the bottom of Post button*/
+
+#writeReview {
+  color: rgb(218, 117, 2);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*Hello there,*/
+#hello {
+  font-weight: 600;
+}
+
+/*Space between Hello there & tagline*/
+.spacehelper {
+  margin-top: 2rem;
+}
+
+/*Logo at the bottom*/
+#logoBottom {
+  height: 5rem;
+  margin: -1rem 0 1rem 0;
+}
+
+/*Profile image*/
+#profileImg {
+  border-radius: 50%;
+  height: 12vh;
+  width: 12vh;
+}
+
+/*Change colour of next, prev button*/
+.carousel-control-prev-icon, 
+.carousel-control-next-icon {
+  background-color: rgb(177, 177, 177);
+}
+
+/*Added from bootstrap*/
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hide {
+  display: none;
 }
