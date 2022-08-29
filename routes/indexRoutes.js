@@ -9,7 +9,7 @@ const { User, Stuff, Comment } = require('../models');
 const sequelize = require('../config/connection');
 
 // Index page
-router.get('/judgemystuff', (req, res) => { 
+router.get('/', (req, res) => { 
   res.render('login');
 });
 // Login Page (GET)
